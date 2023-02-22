@@ -11,14 +11,17 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="flex flex-1 items-center justify-center relative">
-        <div className="flex gap-20 items-center">
-          <div className="w-full">
+        <div className="flex flex-col-reverse mt-12 gap-20 items-center pb-8 lg:flex-row lg:mt-0 lg:pb-0 lg:px-8">
+          <div className="w-full text-center flex flex-col items-center px-5 lg:block lg:text-left">
             <p className="font-Jaldi font-bold text-7xl text-teal-600 w-max rounded-xl px-5 py-2 bg-slate-800 mb-8">
               HEY!
             </p>
-            <p className="text-slate-800 font-Jaldi text-5xl mb-2">
-              {"I'm Derek McEnroe, a software engineer."}
+            <p className="text-slate-800 font-Jaldi text-4xl mb-2">
+              <span>{"I'm "}</span>
+              <span className="font-bold">{"Derek McEnroe"}</span>
+              {", a software engineer"}
             </p>
+
             <p className="text-slate-800 font-Jaldi text-lg">
               {
                 "I love learning new technologies, building enjoyable experiences on the web, and finding solutions to problems.  "
@@ -46,16 +49,16 @@ export default function Home() {
                 className="bg-slate-800 rounded-full text-white fill-white hover:bg-teal-600"
                 title="LinkedIn"
               >
-                <svg viewBox="0 0 512 512" width={98} height={96}>
+                <svg viewBox="0 0 512 512" width={100} height={100}>
                   <path d="M186.4 142.4c0 19-15.3 34.5-34.2 34.5 -18.9 0-34.2-15.4-34.2-34.5 0-19 15.3-34.5 34.2-34.5C171.1 107.9 186.4 123.4 186.4 142.4zM181.4 201.3h-57.8V388.1h57.8V201.3zM273.8 201.3h-55.4V388.1h55.4c0 0 0-69.3 0-98 0-26.3 12.1-41.9 35.2-41.9 21.3 0 31.5 15 31.5 41.9 0 26.9 0 98 0 98h57.5c0 0 0-68.2 0-118.3 0-50-28.3-74.2-68-74.2 -39.6 0-56.3 30.9-56.3 30.9v-25.2H273.8z" />
                 </svg>
               </a>
             </div>
           </div>
 
-          <div className="h-3/4 w-0 border-r-slate-800 border-l-transparent border-y-transparent border-2 absolute left-1/2 transform translate-x-9"></div>
+          <div className="h-3/4 w-0 border-r-slate-800 border-l-transparent border-y-transparent border-2 absolute left-1/2 hidden lg:block"></div>
           <div className="w-full h-full text-center items-center flex justify-center">
-            <div className="relative w-96 h-96">
+            <div className="relative w-72 h-72 lg:w-96 lg:h-96">
               <Image
                 className="rounded-full"
                 src="/images/headshot.png"
