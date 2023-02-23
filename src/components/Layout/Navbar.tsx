@@ -2,7 +2,7 @@ import Hamburber from "../Hamburger";
 import Link from "next/link";
 export default function Navbar() {
   return (
-    <nav className="flex p-8 text-4xl font-Jaldi bg-slate-800">
+    <nav className="flex p-8 text-4xl font-Jaldi font-bold bg-slate-800">
       <Hamburber />
       <div className="LARGE NAV hidden lg:flex flex-1">
         <Link href={"/"}>

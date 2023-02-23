@@ -17,9 +17,16 @@ export default function Home() {
       <main className="flex flex-1 items-center justify-center relative">
         <div className="flex flex-col-reverse mt-12 gap-20 items-center pb-8 lg:flex-row lg:mt-0 lg:pb-0 lg:px-8">
           <div className="w-full text-center flex flex-col items-center px-5 lg:block lg:text-left">
-            <p className="font-Jaldi font-bold text-7xl text-teal-600 w-max rounded-xl px-5 py-2 bg-slate-800 mb-8">
+            <div className="relative font-Jaldi font-bold text-7xl text-teal-600 w-max rounded-xl px-5 py-2 bg-slate-800 mb-8">
               HEY!
-            </p>
+              <div
+                className="w-0 h-0 absolute left-1/2 transform -translate-x-1/2 
+                border-l-[25px] border-l-transparent
+                border-t-[25px] border-t-slate-800
+                border-r-[25px] border-r-transparent"
+              ></div>
+            </div>
+
             <p className="text-slate-800 font-Jaldi text-4xl mb-2">
               <span>{"I'm "}</span>
               <span className="font-bold">{"Derek McEnroe"}</span>
@@ -70,7 +77,7 @@ export default function Home() {
                   setHoverStatus(false);
                 }}
                 id="picture"
-                className="rounded-full hover:drop-shadow-xl hover:sepia"
+                className="rounded-full lg:hover:drop-shadow-xl lg:hover:sepia"
                 src="/images/headshot.png"
                 alt="Picture of Derek McEnroe"
                 objectFit="cover"
@@ -82,7 +89,7 @@ export default function Home() {
               ></div>
 
               {hoverStatus ? (
-                <div>
+                <div className="invisible lg:visible">
                   <div
                     id="start"
                     className="absolute -top-10 -right-24 font-Jaldi text-3xl text-slate-800 font-bold pb-2"
