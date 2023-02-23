@@ -66,7 +66,7 @@ export default function Home() {
               </a>
             </div>
           </div>
-          <div className="h-3/4 w-0 border-r-slate-800 border-l-transparent border-y-transparent border-2 absolute left-1/2 hidden lg:block"></div>
+          <div className="h-3/4 w-0 border-r-slate-800 border-l-transparent border-y-transparent border-2 absolute left-1/2 transform -translate-x-1/2 hidden lg:block"></div>
           <div className="w-full h-full text-center items-center flex justify-center">
             <div className="relative w-72 h-72 lg:w-96 lg:h-96">
               <Image
