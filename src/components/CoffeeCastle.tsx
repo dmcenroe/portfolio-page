@@ -53,12 +53,12 @@ export default function CoffeeCastle() {
             Axios
           </div>
           <div className=" text-blue-700 bg-blue-100 rounded-lg flex items-center justify-center h-6 border border-blue-700">
-            Typescript
+            PostgreSQL
           </div>
-          <div className=" text-teal-700 bg-teal-100 rounded-lg flex items-center justify-center h-6 border border-teal-700">
+          <div className=" text-pink-500 bg-pink-100 rounded-lg flex items-center justify-center h-6 border border-pink-500">
             Sequelize
           </div>
-          <div className=" text-lime-700  bg-lime-100 text-sm rounded-lg flex items-center justify-center h-6 border border-lime-700">
+          <div className=" text-lime-700  bg-lime-100 rounded-lg flex items-center justify-center h-6 border border-lime-700">
             Express
           </div>
           <div className=" text-purple-600 bg-purple-100 rounded-lg flex items-center justify-center h-6 border border-purple-600">
@@ -70,16 +70,17 @@ export default function CoffeeCastle() {
         </div>
 
         <p className="text-xl mt-4 lg:mt-8">
-          Mythx makes use of Blizzard APIs to obtain an manipulate live World of
-          Warcraft player data. The top 500 dungeon runs per realm are displayed
-          each week, and may be filtered by realm or dungeon. Each player in a
-          run may be clicked on to visit their personal player page, showing
-          their overall top run per dungeon.
+          Coffee Castle is an Ecommerce website that sells coffee. As part of a
+          team during Fullstack Academy we developed Coffee Castle as our first
+          fullstack application. I was responsible for implementing all cart
+          functionality including editing quantities, removing items from cart,
+          calculating cart totals and managing cart sessions for guests and
+          returning users.
         </p>
         <p className="text-xl">
-          Digging deeper, users are able to search for specific characters, or
-          they can leverage the analytics feature, displaying a chart of
-          character class specialization popularity per dungeon and realm.
+          We relied on Redux to keep track of the cart's state throughout the
+          application and the backend was completed using Express routes and
+          Sequelize to model the PostgreSQL database.
         </p>
       </div>
     </section>
