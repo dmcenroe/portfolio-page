@@ -7,11 +7,10 @@ export default function VideoPlayer({ videoSource, project }) {
   useEffect(() => {
     const vid = document.getElementById(project);
     setVideoElement(vid);
-  }, []);
+  }, [project]);
 
   useEffect(() => {
-    if (videoElement) {
-      console.log("adding play");
+    if (videoElement && playing) {
       videoElement.setAttribute("autoPlay", "");
       let playCount = 0;
 
@@ -33,13 +32,17 @@ export default function VideoPlayer({ videoSource, project }) {
 
       playXTimes(2);
     }
-  }, [videoElement, project]);
+  }, [videoElement, project, playing]);
 
   console.dir(videoElement);
 
   return (
     <div className="relative">
-      <video id={`${project}`} muted className="w-170 rounded-xl">
+      <video
+        id={`${project}`}
+        muted
+        className="w-170 rounded-xl shadow-lg shadow-slate-800"
+      >
         <source src={videoSource} type="video/mp4" />
         <p>Your browser does not support HTML video.</p>
       </video>

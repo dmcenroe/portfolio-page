@@ -1,5 +1,6 @@
 import Fischer from "@/components/Fischer";
 import MythicPlus from "@/components/MythicPlus";
+import CoffeeCastle from "@/components/CoffeeCastle";
 import { useEffect, useState } from "react";
 
 export default function Portfolio() {
@@ -12,6 +13,8 @@ export default function Portfolio() {
         <Fischer />
         <div className="w-4/5 border-b border-teal-600"></div>
         <MythicPlus />
+        <div className="w-4/5 border-b border-teal-600"></div>
+        <CoffeeCastle />
       </div>
     </div>
   );
