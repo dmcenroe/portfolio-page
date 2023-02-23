@@ -1,7 +1,11 @@
 import Head from "next/head";
 import Image from "next/image";
+import Xarrow from "react-xarrows";
+import { useState } from "react";
 
 export default function Home() {
+  const [hoverStatus, setHoverStatus] = useState();
+
   return (
     <>
       <Head>
@@ -13,16 +17,23 @@ export default function Home() {
       <main className="flex flex-1 items-center justify-center relative">
         <div className="flex flex-col-reverse mt-12 gap-20 items-center pb-8 lg:flex-row lg:mt-0 lg:pb-0 lg:px-8">
           <div className="w-full text-center flex flex-col items-center px-5 lg:block lg:text-left">
-            <p className="font-Jaldi font-bold text-7xl text-teal-600 w-max rounded-xl px-5 py-2 bg-slate-800 mb-8">
+            <div className="relative font-Jaldi font-bold text-7xl text-teal-600 w-max rounded-xl px-5 py-2 bg-slate-800 mb-8">
               HEY!
-            </p>
+              <div
+                className="w-0 h-0 absolute left-1/2 transform -translate-x-1/2 
+                border-l-[25px] border-l-transparent
+                border-t-[25px] border-t-slate-800
+                border-r-[25px] border-r-transparent"
+              ></div>
+            </div>
+
             <p className="text-slate-800 font-Jaldi text-4xl mb-2">
               <span>{"I'm "}</span>
               <span className="font-bold">{"Derek McEnroe"}</span>
               {", a software engineer"}
             </p>
 
-            <p className="text-slate-800 font-Jaldi text-lg">
+            <p className="testDiv text-slate-800 font-Jaldi text-lg">
               {
                 "I love learning new technologies, building enjoyable experiences on the web, and finding solutions to problems.  "
               }
@@ -55,17 +66,49 @@ export default function Home() {
               </a>
             </div>
           </div>
-
           <div className="h-3/4 w-0 border-r-slate-800 border-l-transparent border-y-transparent border-2 absolute left-1/2 hidden lg:block"></div>
           <div className="w-full h-full text-center items-center flex justify-center">
             <div className="relative w-72 h-72 lg:w-96 lg:h-96">
               <Image
-                className="rounded-full"
+                onMouseEnter={() => {
+                  setHoverStatus(true);
+                }}
+                onMouseLeave={() => {
+                  setHoverStatus(false);
+                }}
+                id="picture"
+                className="rounded-full lg:hover:drop-shadow-xl lg:hover:sepia"
                 src="/images/headshot.png"
                 alt="Picture of Derek McEnroe"
                 objectFit="cover"
                 layout="fill"
               />
+              <div
+                id="end"
+                className="absolute  h-12 w-12 top-24 right-16 "
+              ></div>
+
+              {hoverStatus ? (
+                <div className="invisible lg:visible">
+                  <div
+                    id="start"
+                    className="absolute -top-10 -right-24 font-Jaldi text-3xl text-slate-800 font-bold pb-2"
+                  >
+                    That's me!
+                  </div>
+                  <Xarrow
+                    start="start"
+                    end="end"
+                    lineColor={"#0D9488"}
+                    headColor={"#0D9488"}
+                    animateDrawing={0.25}
+                    strokeWidth={"8"}
+                    headSize={"3"}
+                    startAnchor={"bottom"}
+                    endAnchor={"right"}
+                  />{" "}
+                </div>
+              ) : null}
             </div>
           </div>
         </div>
