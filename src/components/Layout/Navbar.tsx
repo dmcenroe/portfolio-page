@@ -16,12 +16,16 @@ export default function Navbar() {
               PORTFOLIO
             </p>
           </Link>
-          <p className="text-white cursor-pointer hover:border-b-2 hover:-mb-2 hover:border-teal-600">
-            SKILLS
-          </p>
-          <p className="text-white cursor-pointer hover:border-b-2 hover:-mb-2 hover:border-teal-600">
-            CONTACT
-          </p>
+          <Link href={"/skills"}>
+            <p className="text-white cursor-pointer hover:border-b-2 hover:-mb-2 hover:border-teal-600">
+              SKILLS
+            </p>
+          </Link>
+          <Link href={"/contact"}>
+            <p className="text-white cursor-pointer hover:border-b-2 hover:-mb-2 hover:border-teal-600">
+              CONTACT
+            </p>
+          </Link>
         </div>
       </div>
     </nav>
