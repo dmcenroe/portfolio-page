@@ -1,8 +1,8 @@
 export default function Contact() {
   return (
-    <section className=" h-screen">
-      <div className="py-8 lg:py-12 px-12 mx-auto max-w-screen-md mt-24 bg-slate-800 rounded-md">
-        <h2 className="mb-4 text-6xl tracking-tight font-extrabold text-center text-white ">
+    <section className="font-mont p-8 flex-1 flex items-center">
+      <div className="py-8 lg:py-12 px-12 mx-auto max-w-screen-md h-max bg-slate-800 rounded-md">
+        <h2 className="mb-4 text-6xl lg:text-7xl tracking-tighter font-bold text-center text-white">
           Contact Me
         </h2>
         <p className="mb-8 lg:mb-16 font-light text-center text-white  sm:text-xl">

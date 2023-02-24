@@ -1,7 +1,7 @@
 import VideoPlayer from "./VideoPlayer";
 export default function CoffeeCastle() {
   return (
-    <section className="flex flex-col-reverse items-center gap-8 lg:gap-20 font-mont text-slate-800 p-8 lg:flex-row justify-center border-4">
+    <section className="flex flex-col-reverse items-center gap-8 lg:gap-20 font-mont text-slate-800 p-8 lg:flex-row justify-center">
       <VideoPlayer
         videoSource={"/videos/coffee-castle.mov"}
         project={"coffee-castle"}

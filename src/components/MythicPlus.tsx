@@ -1,7 +1,7 @@
 import VideoPlayer from "./VideoPlayer";
 export default function MythicPlus() {
   return (
-    <section className="flex flex-col-reverse items-center gap-8 lg:gap-20 font-mont text-slate-800 p-8 lg:flex-row justify-center border-4">
+    <section className="flex flex-col-reverse items-center gap-8 lg:gap-20 font-mont text-slate-800 p-8 lg:flex-row justify-center">
       <VideoPlayer videoSource={"/videos/Mythx.mov"} project={"mythic-plus"} />
 
       <div className="flex flex-col w-full lg:w-1/2 gap-4 items-center lg:items-start">
