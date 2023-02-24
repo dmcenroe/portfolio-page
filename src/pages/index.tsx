@@ -106,7 +106,7 @@ export default function Home() {
                     headSize={"3"}
                     startAnchor={"bottom"}
                     endAnchor={"right"}
-                  />{" "}
+                  />
                 </div>
               ) : null}
             </div>
