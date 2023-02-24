@@ -1,7 +1,7 @@
 export default function Skills() {
   return (
     <div className="flex flex-col font-Jaldi pb-8">
-      <h1 className="text-7xl lg:text-8xl font-Jaldi text-slate-800 m-auto my-8  ">
+      <h1 className="text-7xl lg:text-8xl font-Jaldi text-slate-800 m-auto my-8">
         SKILLS
       </h1>
       <div className="flex flex-col gap-20 items-center relative">
