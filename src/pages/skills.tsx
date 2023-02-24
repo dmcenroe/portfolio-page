@@ -93,13 +93,3 @@ export default function Skills() {
     </div>
   );
 }
-
-{
-  /* <div>Next.js</div>
-<div>PostgreSQL</div>
-<div>Supabase</div>
-<div>Prisma</div>
-<div>Sequelize</div>
-<div>Express</div>
-<div>Axios</div> */
-}
