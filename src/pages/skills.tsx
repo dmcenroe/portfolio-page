@@ -1,8 +1,8 @@
 export default function Skills() {
   return (
-    <div className="flex flex-col font-Jaldi pb-8">
-      <h1 className="text-7xl lg:text-8xl font-Jaldi text-slate-800 m-auto my-8">
-        SKILLS
+    <div className="flex flex-col font-mont pb-8">
+      <h1 className="text-6xl lg:text-8xl font-mont tracking-tighter font-bold text-slate-800 m-auto my-8">
+        Skills
       </h1>
       <div className="flex flex-col gap-20 items-center relative">
         <div className="flex flex-row gap-4 w-full">
@@ -29,12 +29,12 @@ export default function Skills() {
               CSS
             </div>
           </div>
-          <div className="flex flex-col text-4xl w-full lg:text-5xl font-bold justify-center items-start">
+          <div className="flex flex-col text-4xl w-full lg:text-4xl font-bold justify-center items-start">
             <div className="w-3/4 md:w-1/3 flex flex-col lg:flex-row lg:justify-start items-center lg:ml-12">
               <span className="material-symbols-outlined material-icons md-48 text-teal-600">
                 devices
               </span>
-              <p className="lg:ml-4 text-slate-800 text-center lg:text-left">
+              <p className="lg:ml-4 text-slate-800 tracking-tighter text-center lg:text-left">
                 Front End
               </p>
             </div>
@@ -52,9 +52,9 @@ export default function Skills() {
           </svg>
         </div>
         <div className="flex flex-row gap-4 w-full">
-          <div className="flex flex-col text-4xl  w-full lg:text-5xl font-bold justify-center items-end">
+          <div className="flex flex-col text-4xl w-full lg:text-4xl font-bold justify-center items-end">
             <div className="w-3/4 md:w-1/3 flex flex-col-reverse lg:flex-row lg:justify-end items-center lg:mr-12">
-              <p className="lg:mr-4 text-slate-800 text-center lg:text-left">
+              <p className="lg:mr-4 text-slate-800 tracking-tighter text-center lg:text-right">
                 Back End
               </p>
               <span className="material-symbols-outlined material-icons md-48 text-teal-600">
