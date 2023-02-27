@@ -1,11 +1,20 @@
 import { useEffect, useState } from "react";
 
-export default function VideoPlayer({ videoSource, project }) {
-  const [videoElement, setVideoElement] = useState(null);
-  const [playing, setPlaying] = useState(true);
+interface props {
+  videoSource: string;
+  project: string;
+}
+
+export default function VideoPlayer({ videoSource, project }: props) {
+  const [videoElement, setVideoElement] = useState<HTMLVideoElement | null>(
+    null
+  );
+  const [playing, setPlaying] = useState<boolean>(true);
 
   useEffect(() => {
-    const vid = document.getElementById(project);
+    const vid: HTMLVideoElement = document.getElementById(
+      project
+    ) as HTMLVideoElement;
     setVideoElement(vid);
   }, [project]);
 
@@ -14,7 +23,7 @@ export default function VideoPlayer({ videoSource, project }) {
       videoElement.setAttribute("autoPlay", "");
       let playCount = 0;
 
-      const playXTimes = (x) => {
+      const playXTimes = (x: number) => {
         videoElement.load();
         videoElement.playbackRate = 3;
 

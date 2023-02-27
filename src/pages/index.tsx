@@ -4,7 +4,7 @@ import Xarrow from "react-xarrows";
 import { useState } from "react";
 
 export default function Home() {
-  const [hoverStatus, setHoverStatus] = useState();
+  const [hoverStatus, setHoverStatus] = useState<boolean>();
 
   return (
     <>
@@ -94,7 +94,7 @@ export default function Home() {
                     id="start"
                     className="absolute -top-10 -right-24 font-mont text-3xl text-slate-800 font-bold pb-2"
                   >
-                    That's me!
+                    That&apos;s me!
                   </div>
                   <Xarrow
                     start="start"
@@ -102,8 +102,8 @@ export default function Home() {
                     lineColor={"#0D9488"}
                     headColor={"#0D9488"}
                     animateDrawing={0.25}
-                    strokeWidth={"8"}
-                    headSize={"3"}
+                    strokeWidth={8}
+                    headSize={3}
                     startAnchor={"bottom"}
                     endAnchor={"right"}
                   />
