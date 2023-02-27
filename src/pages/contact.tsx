@@ -6,7 +6,8 @@ export default function Contact() {
           Contact Me
         </h2>
         <p className="mb-8 lg:mb-16 font-light text-center text-white  sm:text-xl">
-          Want to reach out? Shoot me an email and I'll get back to you soon!
+          Want to reach out? Shoot me an email and I&apos;ll get back to you
+          soon!
         </p>
         <form
           action="https://formsubmit.co/derek.mcenroe@gmail.com"
@@ -62,7 +63,7 @@ export default function Contact() {
             <textarea
               id="message"
               name="message"
-              rows="6"
+              rows={6}
               className="text-sm rounded-lg block w-full p-2.5 bg-white border-white placeholder-gray-400 text-slate-800 focus:outline-teal-600 shadow-sm-light"
               placeholder=""
             ></textarea>
