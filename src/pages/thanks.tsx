@@ -10,7 +10,7 @@ export default function Thanks() {
         <div className="flex flex-col items-center gap-1">
           <p className="text-5xl font-mont font-bold">Hey, thanks!</p>
           <p className="text-xl lg:text-2xl font-mont font-thin">
-            I'll get back to you as soon as possible.
+            I&apos;ll get back to you as soon as possible.
           </p>
         </div>
         <Link

@@ -9,7 +9,7 @@ export default function Navbar() {
           href={"/"}
           className="flex flex-row items-center cursor-pointer group hover:-mb-px"
         >
-          <span class="material-symbols-outlined material-icons md-36 text-teal-600 group-hover:animate-pulse group-hover:mb-px">
+          <span className="material-symbols-outlined material-icons md-36 text-teal-600 group-hover:animate-pulse group-hover:mb-px">
             flash_on
           </span>
           <p className="text-white font-extrabold group-hover:border-b-2  group-hover:border-teal-600 group-hover:-mb-px">

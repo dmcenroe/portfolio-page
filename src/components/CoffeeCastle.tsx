@@ -78,8 +78,8 @@ export default function CoffeeCastle() {
           returning users.
         </p>
         <p className="text-xl font-extralight">
-          We relied on Redux to keep track of the cart's state throughout the
-          application and the backend was completed using Express routes and
+          We relied on Redux to keep track of the cart&apos;s state throughout
+          the application and the backend was completed using Express routes and
           Sequelize to model the PostgreSQL database.
         </p>
       </div>
