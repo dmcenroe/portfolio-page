@@ -10,14 +10,14 @@ export default function Contact() {
           soon!
         </p>
         <form
-          action="https://formsubmit.co/derek.mcenroe@gmail.com"
+          action="https://formsubmit.co/17d3f1c0e7f886a2de04a96fb36a5092"
           method="POST"
           className="space-y-4 lg:space-y-8"
         >
           <input
             type="hidden"
             name="_next"
-            value="http://localhost:3000/thanks"
+            value="https://my-portfolio-dmcenroe.vercel.app/thanks"
           />
           <input type="hidden" name="_captcha" value="false" />
 
