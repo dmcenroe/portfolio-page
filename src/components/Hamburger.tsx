@@ -48,10 +48,10 @@ export default function Hamburber() {
               <Link href="/portfolio">Portfolio</Link>
             </li>
             <li className="border-b-2 border-teal-600 my-8 uppercase">
-              <a href="/skills">Skills</a>
+              <Link href="/skills">Skills</Link>
             </li>
             <li className="border-b-2 border-teal-600 my-8 uppercase">
-              <a href="/contact">Contact</a>
+              <Link href="/contact">Contact</Link>
             </li>
           </ul>
         </div>
