@@ -1,16 +1,16 @@
 import VideoPlayer from "./VideoPlayer";
 export default function CoffeeCastle() {
   return (
-    <section className="flex flex-col-reverse items-center gap-8 lg:gap-20 font-Jaldi text-slate-800 p-8 lg:flex-row">
+    <section className="flex flex-col-reverse items-center gap-8 lg:gap-20 font-mont text-slate-800 p-8 lg:flex-row justify-center">
       <VideoPlayer
         videoSource={"/videos/coffee-castle.mov"}
         project={"coffee-castle"}
       />
 
       <div className="flex flex-col w-full lg:w-1/2 gap-4 items-center lg:items-start">
-        <div className="w-full">
-          <div className="flex flex-row items-center -mb-1">
-            <p className="text-5xl font-bold w-max mr-4 lg:text-6xl">
+        <div>
+          <div className="flex flex-row items-center justify-center lg:justify-start">
+            <p className="text-4xl mr-4 lg:text-6xl tracking-tighter">
               Coffee Castle
             </p>
 
@@ -44,7 +44,7 @@ export default function CoffeeCastle() {
               </a>
             </div>
           </div>
-          <p className="text-lg text-center lg:text-left">
+          <p className="text-lg font-light text-center lg:text-left">
             <i>Ecommerce website for coffee</i>
           </p>
         </div>
@@ -52,7 +52,7 @@ export default function CoffeeCastle() {
           <div className=" text-amber-700 bg-amber-100 rounded-lg flex items-center justify-center px-7 h-6 border border-amber-600">
             Axios
           </div>
-          <div className=" text-blue-700 bg-blue-100 rounded-lg flex items-center justify-center h-6 border border-blue-700">
+          <div className=" text-blue-700 bg-blue-100 rounded-lg text-sm flex items-center justify-center h-6 border border-blue-700">
             PostgreSQL
           </div>
           <div className=" text-pink-500 bg-pink-100 rounded-lg flex items-center justify-center h-6 border border-pink-500">
@@ -69,7 +69,7 @@ export default function CoffeeCastle() {
           </div>
         </div>
 
-        <p className="text-xl mt-4 lg:mt-8">
+        <p className="text-xl font-extralight mt-4 lg:mt-8">
           Coffee Castle is an Ecommerce website that sells coffee. As part of a
           team during Fullstack Academy we developed Coffee Castle as our first
           fullstack application. I was responsible for implementing all cart
@@ -77,7 +77,7 @@ export default function CoffeeCastle() {
           calculating cart totals and managing cart sessions for guests and
           returning users.
         </p>
-        <p className="text-xl">
+        <p className="text-xl font-extralight">
           We relied on Redux to keep track of the cart's state throughout the
           application and the backend was completed using Express routes and
           Sequelize to model the PostgreSQL database.

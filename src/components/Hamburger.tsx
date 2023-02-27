@@ -4,18 +4,21 @@ export default function Hamburber() {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   return (
-    <div className="flex items-center justify-between w-full lg:hidden">
+    <div className="flex items-center font-mont justify-between w-full lg:hidden">
       <section className="MOBILE-MENU flex w-full lg:hidden">
         <div
-          className="HAMBURGER-ICON space-y-2"
+          className="HAMBURGER-ICON flex flex-col gap-2 justify-center"
           onClick={() => setIsNavOpen((prev) => !prev)}
         >
           <span className="block h-0.5 w-8 animate-pulse bg-teal-600"></span>
           <span className="block h-0.5 w-8 animate-pulse bg-teal-600"></span>
           <span className="block h-0.5 w-8 animate-pulse bg-teal-600"></span>
         </div>
-        <div className="text-2xl font-bold tracking-wider text-white ml-auto">
-          DEREK MCENROE
+        <div className="text-2xl font-bold tracking-tighter text-white ml-auto flex flex-row items-center">
+          <span class="material-symbols-outlined material-icons md-24 text-teal-600 group-hover:animate-pulse group-hover:mb-px">
+            flash_on
+          </span>
+          <p>DM</p>
         </div>
 
         <div className={isNavOpen ? "showMenuNav" : "hideMenuNav"}>

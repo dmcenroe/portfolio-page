@@ -6,8 +6,8 @@ import { useEffect, useState } from "react";
 export default function Portfolio() {
   return (
     <div className="flex flex-col">
-      <h1 className="text-7xl lg:text-8xl font-Jaldi text-slate-800 m-auto my-8 ">
-        PORTFOLIO
+      <h1 className="text-7xl lg:text-8xl font-bold font-mont tracking-tighter text-slate-800 m-auto my-8">
+        Portfolio
       </h1>
       <div className="flex flex-col gap-12 items-center">
         <Fischer />

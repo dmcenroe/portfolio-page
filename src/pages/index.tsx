@@ -17,7 +17,7 @@ export default function Home() {
       <main className="flex flex-1 items-center justify-center relative">
         <div className="flex flex-col-reverse mt-12 gap-20 items-center pb-8 lg:flex-row lg:mt-0 lg:pb-0 lg:px-8">
           <div className="w-full text-center flex flex-col items-center px-5 lg:block lg:text-left">
-            <div className="relative font-Jaldi font-bold text-7xl text-teal-600 w-max rounded-xl px-5 py-2 bg-slate-800 mb-8">
+            <div className="relative font-mont font-extrabold text-7xl text-teal-600 w-max rounded-xl px-5 py-2 bg-slate-800 mb-8">
               HEY!
               <div
                 className="w-0 h-0 absolute left-1/2 transform -translate-x-1/2 
@@ -27,13 +27,13 @@ export default function Home() {
               ></div>
             </div>
 
-            <p className="text-slate-800 font-Jaldi text-4xl mb-2">
+            <p className="text-slate-800 font-mont font-light text-4xl mb-2">
               <span>{"I'm "}</span>
               <span className="font-bold">{"Derek McEnroe"}</span>
-              {", a software engineer"}
+              {", a software engineer."}
             </p>
 
-            <p className="testDiv text-slate-800 font-Jaldi text-lg">
+            <p className="testDiv text-slate-800 font-mont font-md text-lg">
               {
                 "I love learning new technologies, building enjoyable experiences on the web, and finding solutions to problems.  "
               }
@@ -92,7 +92,7 @@ export default function Home() {
                 <div className="invisible lg:visible">
                   <div
                     id="start"
-                    className="absolute -top-10 -right-24 font-Jaldi text-3xl text-slate-800 font-bold pb-2"
+                    className="absolute -top-10 -right-24 font-mont text-3xl text-slate-800 font-bold pb-2"
                   >
                     That's me!
                   </div>

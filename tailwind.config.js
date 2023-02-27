@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        Jaldi: [`"Jaldi"`],
+        mont: [`"Montserrat"`],
       },
       width: {
         100: "26rem",

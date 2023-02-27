@@ -2,7 +2,7 @@ import VideoPlayer from "./VideoPlayer";
 
 export default function Fischer() {
   return (
-    <section className="flex flex-col-reverse items-center gap-8 lg:gap-20 font-Jaldi text-slate-800 p-8 lg:flex-row">
+    <section className="flex flex-col-reverse items-center gap-8 lg:gap-20 font-mont text-slate-800 p-8 lg:flex-row justify-center">
       <VideoPlayer
         videoSource={"/videos/fischer-movie.mov"}
         project={"fischer"}
@@ -10,8 +10,8 @@ export default function Fischer() {
 
       <div className="flex flex-col w-full lg:w-1/2 gap-4 items-center lg:items-start">
         <div>
-          <div className="flex flex-row items-center -mb-1">
-            <p className="text-6xl font-bold mr-4">Fischer</p>
+          <div className="flex flex-row items-center justify-center lg:justify-start">
+            <p className="text-6xl mr-4 tracking-tighter">Fischer</p>
 
             <div className="flex flex-row gap-1">
               <a
@@ -53,8 +53,8 @@ export default function Fischer() {
               </a>
             </div>
           </div>
-          <p className="text-lg text-center lg:text-left">
-            <i>Fact Checking Extension & Web Platform</i>
+          <p className=" text-lg text-center font-light italic lg:text-left">
+            Fact Checking Extension & Web Platform
           </p>
         </div>
         <div className="TECHS-USED grid grid-cols-3 w-max gap-x-3 gap-y-2">
@@ -68,23 +68,23 @@ export default function Fischer() {
             OpenAI
           </div>
           <div className=" text-green-700 bg-green-100 rounded-lg flex items-center justify-center h-6 border border-green-700">
-            supabase
+            Supabase
           </div>
           <div className=" text-indigo-700 bg-indigo-100 rounded-lg flex items-center justify-center h-6 border border-indigo-700">
             Prisma
           </div>
           <div className=" text-sky-700 bg-sky-100  rounded-lg flex items-center justify-center h-6 border border-sky-700">
-            tailwind
+            Tailwind
           </div>
         </div>
 
-        <p className="text-xl mt-4 lg:mt-8">
+        <p className="text-xl font-extralight mt-4 lg:mt-8">
           Fischer leverages emerging AI technology to provide a first line of
           defense against misinformation. We combine that data with input from
           real users, and topic experts to determine the validity of statements
           across the internet.
         </p>
-        <p className="text-xl">
+        <p className="text-xl font-extralight">
           Fischer helps you identify the validity of information in real time as
           you’re browsing websites. Any piece of information that has been
           submitted by users will be highlighted green, yellow, or red,
