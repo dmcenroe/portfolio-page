@@ -42,16 +42,24 @@ export default function Hamburber() {
           </div>
           <ul className="MENU-LINK-MOBILE-OPEN flex flex-col items-center justify-between min-h-[250px]">
             <li className="border-b-2 border-teal-600 my-8 uppercase">
-              <Link href="/">Home</Link>
+              <Link onClick={() => setIsNavOpen(false)} href="/">
+                Home
+              </Link>
             </li>
             <li className="border-b-2 border-teal-600 my-8 uppercase">
-              <Link href="/portfolio">Portfolio</Link>
+              <Link onClick={() => setIsNavOpen(false)} href="/portfolio">
+                Portfolio
+              </Link>
             </li>
             <li className="border-b-2 border-teal-600 my-8 uppercase">
-              <Link href="/skills">Skills</Link>
+              <Link onClick={() => setIsNavOpen(false)} href="/skills">
+                Skills
+              </Link>
             </li>
             <li className="border-b-2 border-teal-600 my-8 uppercase">
-              <Link href="/contact">Contact</Link>
+              <Link onClick={() => setIsNavOpen(false)} href="/contact">
+                Contact
+              </Link>
             </li>
           </ul>
         </div>

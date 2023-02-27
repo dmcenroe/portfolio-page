@@ -101,7 +101,6 @@ export default function Home() {
                     end="end"
                     lineColor={"#0D9488"}
                     headColor={"#0D9488"}
-                    animateDrawing={0.25}
                     strokeWidth={8}
                     headSize={3}
                     startAnchor={"bottom"}
