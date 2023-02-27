@@ -25,7 +25,7 @@ export default function VideoPlayer({ videoSource, project }: props) {
 
       const playXTimes = (x: number) => {
         videoElement.load();
-        videoElement.playbackRate = 3;
+        videoElement.playbackRate = 1.5;
 
         videoElement.onended = function () {
           if (playCount === 2) {
