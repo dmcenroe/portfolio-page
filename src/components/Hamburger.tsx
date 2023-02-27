@@ -15,12 +15,15 @@ export default function Hamburber() {
           <span className="block h-0.5 w-8 animate-pulse bg-teal-600"></span>
           <span className="block h-0.5 w-8 animate-pulse bg-teal-600"></span>
         </div>
-        <div className="text-2xl font-bold tracking-tighter text-white ml-auto flex flex-row items-center">
+        <Link
+          href="/"
+          className="text-2xl font-bold tracking-tighter text-white ml-auto flex flex-row items-center"
+        >
           <span className="material-symbols-outlined material-icons md-24 text-teal-600 group-hover:animate-pulse group-hover:mb-px">
             flash_on
           </span>
           <p>DM</p>
-        </div>
+        </Link>
 
         <div className={isNavOpen ? "showMenuNav" : "hideMenuNav"}>
           <div
