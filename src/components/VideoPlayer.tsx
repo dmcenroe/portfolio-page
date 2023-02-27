@@ -50,6 +50,7 @@ export default function VideoPlayer({ videoSource, project }: props) {
       <video
         id={`${project}`}
         muted
+        playsInline
         className="w-170 rounded-xl shadow-lg shadow-slate-800"
       >
         <source src={videoSource} type="video/mp4" />
