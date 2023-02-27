@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { useState } from "react";
 
 export default function Hamburber() {
@@ -15,7 +16,7 @@ export default function Hamburber() {
           <span className="block h-0.5 w-8 animate-pulse bg-teal-600"></span>
         </div>
         <div className="text-2xl font-bold tracking-tighter text-white ml-auto flex flex-row items-center">
-          <span class="material-symbols-outlined material-icons md-24 text-teal-600 group-hover:animate-pulse group-hover:mb-px">
+          <span className="material-symbols-outlined material-icons md-24 text-teal-600 group-hover:animate-pulse group-hover:mb-px">
             flash_on
           </span>
           <p>DM</p>
@@ -41,10 +42,10 @@ export default function Hamburber() {
           </div>
           <ul className="MENU-LINK-MOBILE-OPEN flex flex-col items-center justify-between min-h-[250px]">
             <li className="border-b-2 border-teal-600 my-8 uppercase">
-              <a href="/">Home</a>
+              <Link href="/">Home</Link>
             </li>
             <li className="border-b-2 border-teal-600 my-8 uppercase">
-              <a href="/portfolio">Portfolio</a>
+              <Link href="/portfolio">Portfolio</Link>
             </li>
             <li className="border-b-2 border-teal-600 my-8 uppercase">
               <a href="/skills">Skills</a>
