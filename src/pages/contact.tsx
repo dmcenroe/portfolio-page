@@ -8,7 +8,18 @@ export default function Contact() {
         <p className="mb-8 lg:mb-16 font-light text-center text-white  sm:text-xl">
           Want to reach out? Shoot me an email and I'll get back to you soon!
         </p>
-        <form action="#" className="space-y-8">
+        <form
+          action="https://formsubmit.co/derek.mcenroe@gmail.com"
+          method="POST"
+          className="space-y-4 lg:space-y-8"
+        >
+          <input
+            type="hidden"
+            name="_next"
+            value="http://localhost:3000/thanks"
+          />
+          <input type="hidden" name="_captcha" value="false" />
+
           <div>
             <label
               htmlFor="email"
@@ -19,6 +30,7 @@ export default function Contact() {
             <input
               type="email"
               id="email"
+              name="email"
               className="text-sm rounded-lg block w-full p-2.5 bg-white border-white placeholder-gray-400 text-slate-800 focus:outline-teal-600 shadow-sm-light"
               placeholder=""
               required
@@ -34,6 +46,7 @@ export default function Contact() {
             <input
               type="text"
               id="subject"
+              name="subject"
               className="text-sm rounded-lg block w-full p-2.5 bg-white border-white placeholder-gray-400 text-slate-800 focus:outline-teal-600 shadow-sm-light"
               placeholder=""
               required
@@ -48,6 +61,7 @@ export default function Contact() {
             </label>
             <textarea
               id="message"
+              name="message"
               rows="6"
               className="text-sm rounded-lg block w-full p-2.5 bg-white border-white placeholder-gray-400 text-slate-800 focus:outline-teal-600 shadow-sm-light"
               placeholder=""
