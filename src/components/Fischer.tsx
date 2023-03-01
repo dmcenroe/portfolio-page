@@ -37,7 +37,7 @@ export default function Fischer() {
                 </span>
               </a>
               <a
-                href="https://github.com/dmcenroe"
+                href="https://github.com/FSA2211-Team-6/fischer"
                 target="_blank"
                 rel="noreferrer noopener"
                 title="github"
@@ -79,17 +79,19 @@ export default function Fischer() {
         </div>
 
         <p className="text-xl font-extralight mt-4 lg:mt-8">
-          Fischer leverages emerging AI technology to provide a first line of
-          defense against misinformation. We combine that data with input from
-          real users, and topic experts to determine the validity of statements
-          across the internet.
+          Fischer is a fact checking google chrome extension and web application
+          where AI, users, and experts come together to find the true. Submit
+          assertions from any website with the extension then visit fischers web
+          app to find that assertion along with all other pieces of information
+          that have been submitted from users all over the world. Leverage the
+          input of topic experts, vote and comment on information to help our
+          algorithm determine the validitiy of statements across the internet.
         </p>
         <p className="text-xl font-extralight">
-          Fischer helps you identify the validity of information in real time as
-          you’re browsing websites. Any piece of information that has been
-          submitted by users will be highlighted green, yellow, or red,
-          indicating a true, subjective, or false statement. Hover over these
-          sections on the website for more information.
+          On Fischer I was primarily responsible for the designing and
+          implementing the post feed, voting system, and stats features. As a
+          group we tackled learning new technologies while also building out our
+          final project for Fullstack Academy.
         </p>
       </div>
     </section>

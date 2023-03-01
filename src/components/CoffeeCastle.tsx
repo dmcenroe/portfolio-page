@@ -16,7 +16,7 @@ export default function CoffeeCastle() {
 
             <div className="flex flex-row gap-1">
               <a
-                href="https://faction-fischer.vercel.app/"
+                href="https://graceshopper-uewg.onrender.com"
                 target="_blank"
                 rel="noreferrer noopener"
                 title="Fischer"
@@ -28,7 +28,7 @@ export default function CoffeeCastle() {
               </a>
 
               <a
-                href="https://github.com/dmcenroe"
+                href="https://github.com/dmcenroe/GraceShopper"
                 target="_blank"
                 rel="noreferrer noopener"
                 title="github"
@@ -65,22 +65,21 @@ export default function CoffeeCastle() {
             Redux
           </div>
           <div className=" text-sky-700 bg-sky-100  rounded-lg flex items-center justify-center h-6 border border-sky-700">
-            tailwind
+            Tailwind
           </div>
         </div>
 
         <p className="text-xl font-extralight mt-4 lg:mt-8">
-          Coffee Castle is an Ecommerce website that sells coffee. As part of a
-          team during Fullstack Academy we developed Coffee Castle as our first
-          fullstack application. I was responsible for implementing all cart
+          Coffee Castle is an Ecommerce website that sells coffee. Browse
+          different varieties of coffee, add to cart, and checkout! Complete
+          with an authentication system using json web tokens, and a persistent
+          cart for returning users and guests.
+        </p>
+        <p className="text-xl font-extralight">
+          On Coffee Castle I was responsible for implementing all cart
           functionality including editing quantities, removing items from cart,
           calculating cart totals and managing cart sessions for guests and
           returning users.
-        </p>
-        <p className="text-xl font-extralight">
-          We relied on Redux to keep track of the cart&apos;s state throughout
-          the application and the backend was completed using Express routes and
-          Sequelize to model the PostgreSQL database.
         </p>
       </div>
     </section>

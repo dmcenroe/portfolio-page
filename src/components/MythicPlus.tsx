@@ -11,7 +11,7 @@ export default function MythicPlus() {
 
             <div className="flex flex-row gap-1">
               <a
-                href="https://faction-fischer.vercel.app/"
+                href="mythic-plus-leaderboard.vercel.app"
                 target="_blank"
                 rel="noreferrer noopener"
                 title="Fischer"
@@ -23,7 +23,7 @@ export default function MythicPlus() {
               </a>
 
               <a
-                href="https://github.com/dmcenroe"
+                href="https://github.com/dmcenroe/BlizzAPI---M-Leaderboard"
                 target="_blank"
                 rel="noreferrer noopener"
                 title="github"
