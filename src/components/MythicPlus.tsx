@@ -11,7 +11,7 @@ export default function MythicPlus() {
 
             <div className="flex flex-row gap-1">
               <a
-                href="mythic-plus-leaderboard.vercel.app"
+                href="https://mythic-plus-leaderboard.vercel.app"
                 target="_blank"
                 rel="noreferrer noopener"
                 title="Fischer"
